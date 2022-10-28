@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5727e4232e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./src/styles/normalize.css">
+    <link rel="stylesheet" href="./src/styles/style.css" >
+    <script src="src/component-cards/cards.js"></script>
+    <title>Home loged in</title>
+</head>
+<body>
+    <nav>
+        <div class="container-nav__icon">
+        <i class="fa-solid fa-bars fa-2x"></i>
+        </div>
+
+        <div class="container-nav__text">
+            <div class="nav-contaier">
+                <img src="assets/icons/Subtract.png" alt="">
+                <p>Sharing knowledge</p>
+            </div>
+        </div>
+    </nav>
+    <header class="container-header">
+        <p class="container-header__p"> <span class="gft"> GFT </span>
+            <img src="assets/icons/flecha_derecha.png" alt="">
+                Sharing knowledge
+        </p>
+    </header>
+    <main class="container-main">
+    <section class="slider-section">
+        <ul class="slider-section__ul">
+            <li class="active">Your Feed</li>
+            <li>Global Feed</li>
+        </ul>
+        <i class="fa-solid fa-sliders fa-2x"></i>
+    </section>
+   <article-cards like="17"></article-cards>
+   <article-cards love="love" like="18"></article-cards>
+   <article-cards love="love" like="40"></article-cards>
+    </main>
+    <script src="src/js/main.js"></script>
+</body>
+</html>
