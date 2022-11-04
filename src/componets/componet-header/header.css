@@ -1,0 +1,22 @@
+.container-header{
+    width: 100%;
+    min-width: 360px;
+    height: 104px;
+    margin-top: -20px;
+    text-align: center;
+    background-color: var(--Primary-Brand);
+    background-image: url('../../../assets/img/Group\ 6.png');
+    background-repeat: no-repeat;
+}
+.container-header__p{
+    padding-top: 40px;
+    font-size: 2rem;
+    color: var(--Primary-Sky);
+}
+.container-header__p .gft{
+    font-weight: 700;
+    font-size: 3rem ;
+}
+.container-header__p img{
+    padding: 0 5px;
+}

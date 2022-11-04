@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5727e4232e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/home-logend-in.css" >
+    <script type="module" src="../componets/componet-nav/nav.js"></script>
+    <script type="module" src="../componets/componet-header/header.js"></script>
+    <script type="module" src="../componets/cards/cards.js"></script>
+    <title>Home loged in</title>
+</head>
+<body>
+    <!-- barra de navegación -->
+    <componet-nav></componet-nav>
+    <!-- header -->
+    <componet-header></componet-header>
+    <!-- main -->
+    <main class="container-main">
+    <!-- opciones -->
+    <section class="slider-section">
+        <ul class="slider-section__ul" id="navbar">
+            <li class="option active" onclick="toShowYourFeed()" id="yourFeed"><a>Your Feed</a> </li>
+            <li class="option" id="globalFeed" onclick="toShowGlobalFeed()"><a>Global Feed</a> </li>
+        </ul>
+        <i class="fa-solid fa-sliders fa-2x"></i>
+    </section>
+    <!-- cards -->
+    <template id="your-feed">
+        <article-cards like="17"></article-cards>
+        <article-cards heart="love" like="18"></article-cards>
+        <article-cards heart="love" like="40"></article-cards>
+    </template>
+
+    <template id="global-feed">
+        <article-cards like="17"></article-cards>
+    </template>
+
+    </main>
+    <script src="../js/home-logend-in.js"></script>
+    <script src="../js/functionality.js"></script>
+</body>
+</html>
